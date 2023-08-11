@@ -1,3 +1,7 @@
 .main-text {
-    color: rgb(21,28,58);
+  color: rgb(21, 28, 58);
+}
+
+.bg-purple {
+  background-color: #6d07f2;
 }
