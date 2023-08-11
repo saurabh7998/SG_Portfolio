@@ -62,7 +62,10 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className="container" style={{ maxWidth: "150vh", marginTop: "-20vh" }}>
+      <div
+        className="container"
+        style={{ maxWidth: "150vh", marginTop: "-20vh" }}
+      >
         <div className="row">
           <div className="col-md-4 col-12 m-0 p-0">
             <CardComponent />
