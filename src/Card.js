@@ -1,5 +1,5 @@
 import React from "react";
-import BackendImg from "./backendImg.png";
+import BackendImg from "./images/backendImg.png";
 
 function CardComponent() {
   return (

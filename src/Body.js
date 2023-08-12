@@ -1,7 +1,12 @@
 import "./app.css";
-import MyPhoto from "./MyPhoto.png";
-import DevImg from "./developer-workspace.png";
+import MyPhoto from "./images/MyPhoto.png";
+import DevImg from "./images/developer-workspace.png";
+import MusicHubImg from "./images/MusicHub-Preview.png";
+import DungeonSlayerImg from "./images/dungeonSlayer.png";
+import TuiterImg from "./images/TuiterPreview.png";
 import CardComponent from "./Card";
+import ProjectCard from "./ProjectCard";
+import { DUNGEON_MONSTER_SLAYER, MUSIC_HUB, TUITER_APP } from "./common";
 
 function Body() {
   return (
@@ -75,6 +80,44 @@ function Body() {
           </div>
           <div className="col-md-4 col-12 m-0 p-0">
             <CardComponent />
+          </div>
+        </div>
+      </div>
+      <div class="album py-5">
+        <div class="container">
+          <div className="col-lg-6 mx-auto text-center my-5 border-bottom">
+            <h1 className="pb-2 display-6 fw-bold text-body-emphasis">
+              My Projects
+            </h1>
+            <p className="lead mb-4">
+              Here are a few past projects which I have worked on!
+            </p>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <ProjectCard
+                image={MusicHubImg}
+                title={MUSIC_HUB.title}
+                description={MUSIC_HUB.description}
+                githubLink={MUSIC_HUB.githubLink}
+              />
+            </div>
+            <div class="col">
+              <ProjectCard
+                image={DungeonSlayerImg}
+                title={DUNGEON_MONSTER_SLAYER.title}
+                description={DUNGEON_MONSTER_SLAYER.description}
+                githubLink={DUNGEON_MONSTER_SLAYER.githubLink}
+              />
+            </div>
+            <div class="col">
+              <ProjectCard
+                image={TuiterImg}
+                title={TUITER_APP.title}
+                description={TUITER_APP.description}
+                githubLink={TUITER_APP.githubLink}
+              />
+            </div>
           </div>
         </div>
       </div>
