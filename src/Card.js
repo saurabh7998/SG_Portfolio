@@ -3,7 +3,7 @@ import BackendImg from "./backendImg.png";
 
 function CardComponent() {
   return (
-    <div className="card mx-5 mx-md-0">
+    <div className="card mx-5 mx-md-0 pb-5">
       <img
         src={BackendImg}
         className="card-img-top mx-auto mt-3"
@@ -16,7 +16,7 @@ function CardComponent() {
         <h6 className="text-secondary">
           Python, Java, Node.js, Express.js, Flask, SQL, MongoDB
         </h6>
-        <h6 className="py-3">Dev Tools I use:</h6>
+        <h6 className="pt-4">Dev Tools I use:</h6>
       </div>
       <ul className="list-group list-group-flush border-0">
         <li className="list-group-item text-center text-secondary border-0">
