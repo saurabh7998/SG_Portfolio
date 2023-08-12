@@ -90,14 +90,27 @@ function Body() {
                 style={{maxWidth: "150vh", marginTop: "-20vh"}}
             >
                 <div className="row">
-                    <div className="col-md-4 col-12 m-0 p-0">
-                        <CardComponent/>
+                    {/*className="d-grid grid-cols-2 gap-4 mt-5"*/}
+                    <div className="d-grid grid-cols-2 col-md-6 col-12 m-0 p-0">
+                        <CardComponent
+                            mainTitle="Backend Technologies"
+                            heading1="Dev Tools I use"
+                            text1="IntelliJ, PyCharm, Android Studio, MS SQL Server, AWS, Bitbucket, Bamboo, GitHub, Docker"
+                            heading2="Languages I speak"
+                            skills={["Python", "Java", "Node.js", "Express.js","Flask", "SQL", "MongoDB"]}
+                        />
+                    </div>
+                    <div className="d-grid grid-cols-2 col-md-6 col-12 m-0 p-0">
+                        <CardComponent
+                            mainTitle="Frontend Technologies"
+                            heading1="Dev Tools I use"
+                            text1="VS Code, Atom, NPM, Chrome DevTools, React DevTools, Figma, Codepen"
+                            heading2="Frameworks/Libraries"
+                            skills={["React.js", "Redux.js", "HTML5", "CSS3", "Material UI", "Bootstrap"]}
+                        />
                     </div>
                     <div className="col-md-4 col-12 m-0 p-0">
-                        <CardComponent/>
-                    </div>
-                    <div className="col-md-4 col-12 m-0 p-0">
-                        <CardComponent/>
+                        {/*<CardComponent/>*/}
                     </div>
                 </div>
             </div>

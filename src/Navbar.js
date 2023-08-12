@@ -18,7 +18,7 @@ function Navbar() {
                     id="navbarsExample08">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active"
+                            <a className="nav-link"
                                aria-current="page"
                                href="#about"
                             >About</a>
