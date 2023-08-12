@@ -2,7 +2,7 @@ import { Github, Linkedin, Instagram } from "react-bootstrap-icons";
 
 function Footer() {
   return (
-    <div class="bg-dark text-white">
+    <div id="contact" class="bg-dark text-white">
       <footer class="py-3 mt-4">
         <ul class="nav justify-content-center pb-3 mb-3">
           <li class="nav-item">
