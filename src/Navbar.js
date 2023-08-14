@@ -1,3 +1,5 @@
+import Logo from "./images/logo.png";
+
 function Navbar() {
     return (
         <nav
@@ -12,7 +14,9 @@ function Navbar() {
                         aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-
+                <div>
+                    <img src={Logo} alt="Logo" className="navbar-logo mt-3" style={{maxHeight:"12vh", maxWidth:"12vh"}}/>
+                </div>
                 <div
                     className="collapse navbar-collapse justify-content-md-center"
                     id="navbarsExample08">

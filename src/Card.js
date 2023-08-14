@@ -1,11 +1,11 @@
 import React from "react";
-import BackendImg from "./images/backendImg.png";
 
-function CardComponent({mainTitle, heading1, text1, heading2, skills}) {
+
+function CardComponent({img, mainTitle, heading1, text1, heading2, skills}) {
     return (
         <div className="card mx-5 mx-md-0" style={{minHeight: "0"}}>
             <img
-                src={BackendImg}
+                src={img}
                 className="card-img-top mx-auto mt-3"
                 alt="Card"
                 style={{maxWidth: "150px"}}
@@ -21,8 +21,13 @@ function CardComponent({mainTitle, heading1, text1, heading2, skills}) {
                     {
                         skills.map((skill, index) => {
                             return (
-                                <li key={index} className="list-group-item text-center text-secondary border-0 ">
-                                    {skill}
+                                <li key={index}
+                                    className="list-group-item text-center
+                                    text-secondary border-0">
+                                    <span className="badge bg-dark-subtle border
+                                     border-dark-subtle text-dark-emphasis rounded-pill">
+                                        {skill}
+                                    </span>
                                 </li>
                             )
                         })

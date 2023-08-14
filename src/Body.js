@@ -1,12 +1,20 @@
 import "./app.css";
 import MyPhoto from "./images/MyPhoto.png";
 import DevImg from "./images/developer-workspace.png";
+import FrontendImg from "./images/frontend.png";
+import Frontend from "./images/frontendImg.png";
+import BackendImg from "./images/backend.png";
 import MusicHubImg from "./images/MusicHub-Preview.png";
 import DungeonSlayerImg from "./images/dungeonSlayer.png";
 import TuiterImg from "./images/TuiterPreview.png";
 import CardComponent from "./Card";
 import ProjectCard from "./ProjectCard";
-import {DUNGEON_MONSTER_SLAYER, MUSIC_HUB, TUITER_APP} from "./common";
+import {
+    BACKEND_TECH,
+    DUNGEON_MONSTER_SLAYER, FRONTEND_TECH,
+    MUSIC_HUB,
+    TUITER_APP
+} from "./common";
 
 function Body() {
     return (
@@ -90,23 +98,24 @@ function Body() {
                 style={{maxWidth: "150vh", marginTop: "-20vh"}}
             >
                 <div className="row">
-                    {/*className="d-grid grid-cols-2 gap-4 mt-5"*/}
                     <div className="d-grid grid-cols-2 col-md-6 col-12 m-0 p-0">
                         <CardComponent
+                            img={BackendImg}
                             mainTitle="Backend Technologies"
                             heading1="Dev Tools I use"
-                            text1="IntelliJ, PyCharm, Android Studio, MS SQL Server, AWS, Bitbucket, Bamboo, GitHub, Docker"
+                            text1={BACKEND_TECH.devTools}
                             heading2="Languages I speak"
-                            skills={["Python", "Java", "Node.js", "Express.js","Flask", "SQL", "MongoDB"]}
+                            skills={BACKEND_TECH.languages}
                         />
                     </div>
                     <div className="d-grid grid-cols-2 col-md-6 col-12 m-0 p-0">
                         <CardComponent
+                            img={Frontend}
                             mainTitle="Frontend Technologies"
                             heading1="Dev Tools I use"
-                            text1="VS Code, Atom, NPM, Chrome DevTools, React DevTools, Figma, Codepen"
+                            text1={FRONTEND_TECH.devTools}
                             heading2="Frameworks/Libraries"
-                            skills={["React.js", "Redux.js", "HTML5", "CSS3", "Material UI", "Bootstrap"]}
+                            skills={FRONTEND_TECH.libraries}
                         />
                     </div>
                     <div className="col-md-4 col-12 m-0 p-0">
@@ -117,7 +126,7 @@ function Body() {
             <div id="projects" class="album py-5">
                 <div class="container">
                     <div
-                        className="col-lg-6 mx-auto text-center my-5 border-bottom">
+                        className="col-lg-6 mx-auto text-center my-5">
                         <h1 className="pb-2 display-6 fw-bold text-body-emphasis">
                             My Projects
                         </h1>
@@ -136,18 +145,18 @@ function Body() {
                         </div>
                         <div class="col">
                             <ProjectCard
-                                image={DungeonSlayerImg}
-                                title={DUNGEON_MONSTER_SLAYER.title}
-                                description={DUNGEON_MONSTER_SLAYER.description}
-                                githubLink={DUNGEON_MONSTER_SLAYER.githubLink}
-                            />
-                        </div>
-                        <div class="col">
-                            <ProjectCard
                                 image={TuiterImg}
                                 title={TUITER_APP.title}
                                 description={TUITER_APP.description}
                                 githubLink={TUITER_APP.githubLink}
+                            />
+                        </div>
+                        <div class="col">
+                            <ProjectCard
+                                image={DungeonSlayerImg}
+                                title={DUNGEON_MONSTER_SLAYER.title}
+                                description={DUNGEON_MONSTER_SLAYER.description}
+                                githubLink={DUNGEON_MONSTER_SLAYER.githubLink}
                             />
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import "./app.css";
 
 function ProjectCard({ image, title, description, githubLink }) {
   return (
-    <div class="card shadow-sm">
+    <div class="card shadow-sm position-relative" style={{minHeight: "70vh"}}>
       <svg
         class="bd-placeholder-img card-img-top"
         width="100%"
@@ -25,7 +25,7 @@ function ProjectCard({ image, title, description, githubLink }) {
       <div class="card-body">
         <h5>{title}</h5>
         <p class="card-text">{description}</p>
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="position-absolute bottom-0 start-0 p-3 d-flex justify-content-between align-items-center">
           <a
             type="button"
             class="btn btn-outline-success d-flex align-items-center"

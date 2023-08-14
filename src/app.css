@@ -6,3 +6,10 @@
   background-color: #6d07f2;
 }
 
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .card {
+    min-height: 90vh !important; /* Override the minHeight for smaller screens */
+  }
+}
+
