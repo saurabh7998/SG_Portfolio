@@ -1,7 +1,6 @@
 import "./app.css";
 import MyPhoto from "./images/MyPhoto.png";
 import DevImg from "./images/developer-workspace.png";
-import FrontendImg from "./images/frontend.png";
 import Frontend from "./images/frontendImg.png";
 import BackendImg from "./images/backend.png";
 import MusicHubImg from "./images/MusicHub-Preview.png";
