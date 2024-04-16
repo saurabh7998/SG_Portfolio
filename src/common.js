@@ -34,14 +34,14 @@ export const DUNGEON_MONSTER_SLAYER = {
 
 export const BACKEND_TECH = {
     devTools: "IntelliJ, PyCharm, Android Studio, MS SQL Server, AWS,"
-              + " Bitbucket, Bamboo, GitHub, Docker",
-    languages: ["Python", "Java", "JavaScript", "Node.js", "Express.js",
-                "Flask", "SQL", "MongoDB"]
+              + " Bitbucket, Bamboo, GitHub, Docker, ElasticSearch, SonarQube",
+    languages: ["Java", "Python", "JavaScript", "Node.js", "Express.js",
+                "Flask", "Spring Boot", "SQL", "MongoDB"]
 }
 
 export const FRONTEND_TECH = {
     devTools: "VS Code, Atom, NPM, Chrome DevTools, React DevTools, Figma,"
               + " Codepen",
-    libraries: ["HTML5", "CSS3", "React.js", "Redux.js", "Material UI",
+    libraries: ["HTML5", "CSS3", "React.js", "Redux.js", "Angular.js", "NgRx", "Material UI",
                 "Bootstrap", "Tailwind CSS"]
 }
